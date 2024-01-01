@@ -12,7 +12,7 @@ The image_batch represents a tensor with a size of (32, 180, 180, 3). It contain
 ## Model
 The Keras Sequential model is composed of three sets of convolution blocks (tf.keras.layers.Conv2D) , each followed by a max pooling layer (tf.keras.layers.MaxPooling2D) . Additionally, there is a fully-connected layer (tf.keras.layers.Dense) with 128 units at the top, which is activated using the ReLU activation function ('relu'). It's important to note that this model hasn't been fine-tuned for achieving the highest accuracy. 
 
-### Compile the model
+### To Compile the model
 For this model, we choose the tf.keras.optimizers.Adam optimizer and tf.keras.losses.SparseCategoricalCrossentropy loss function. 
 
 We aaply **data augmentation** using the following Keras preprocessing layers: tf.keras.layers.RandomFlip, tf.keras.layers.RandomRotation, and tf.keras.layers.RandomZoom.
